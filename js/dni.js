@@ -42,13 +42,19 @@ function averiguaLetra(){
         }
     }
     if(comprobar == 0){
-        alert("El dni es valido");
+        document.getElementById("nombre_registro").innerHTML = nombre;
+        document.getElementById("apellido_dni").innerHTML = apellido;
+        document.getElementById("total_final").innerHTML = "El dni es valido";
     } 
     else if(comprobar == 1){
-        alert("El dni no es valido");
+        document.getElementById("nombre_registro").innerHTML = nombre;
+        document.getElementById("apellido_dni").innerHTML = apellido;
+        document.getElementById("total_final").innerHTML = "El dni NO es valido";
 
     } else if(comprobar == 2){
-        alert("la letra no esta bien");
+        document.getElementById("nombre_registro").innerHTML = nombre;
+        document.getElementById("apellido_dni").innerHTML = apellido;
+        document.getElementById("total_final").innerHTML = "La letra de el dni no es valido";
     }
 
 
